@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
   }
 
   const ts = new Date().getTime();
-  const hash = crypto.createHash('md5').update(ts + privateKey + publicKey).digest('hex');
+  const hash = crypto.createHash('md5').update(ts + privateKey! + publicKey!).digest('hex');
 
   const comicsUrl = `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
   const url = `https://gateway.marvel.com:443/v1/public/characters/${id}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
