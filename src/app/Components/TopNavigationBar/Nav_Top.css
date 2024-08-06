@@ -1,0 +1,44 @@
+
+.Nav_Top {
+    width: 100%;
+    background-color: var(--color-black);
+    height: 84px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav_Major_Icon{
+    height: 52px;
+    width: 130px;
+}
+
+.Nav_Heart{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    width: 56px;
+    height: 37px;
+    padding: 16px;
+}
+
+.Nav_Minor_Icon{
+    height: 20px;
+    width: 24px;
+}
+
+.Nav_Button_Minor {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Nav_Number_Heart{
+    color: var(--color-white);
+}

@@ -1,0 +1,122 @@
+.Card {
+    cursor: pointer;
+    width: 172px;
+    height: 245.97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.86px), calc(100% - 12.86px) 100%, 0 100%);
+}
+.Image_Heart {
+    transition: transform 0.3s ease;
+  }
+
+.Card_Image{
+    width: 100%;
+    height: 75%;
+    background-color: white;
+}
+
+.Line{
+    margin-top: -1px;
+    width: 100%;
+    height: 2.18%;
+    background-color: red;
+}
+
+.Content_Card{
+    width: 100%;
+    height: 22.7%;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Card_Name{
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.Button_Heart{
+    margin-right: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Image_Heart{
+    width: 12px;
+    height: 10px;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+}
+
+@media (min-width: 901px) {
+    .Card {
+
+        cursor: pointer;
+        width: 188px;
+        height: 245.97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.86px), calc(100% - 12.86px) 100%, 0 100%);
+    }
+    .Image_Heart {
+        transition: transform 0.3s ease;
+      }
+    
+    .Card_Image{
+        width: 100%;
+        height: 75%;
+        background-color: white;
+    }
+    
+    .Line{
+        margin-top: -1px;
+        width: 100%;
+        height: 2.18%;
+        background-color: red;
+    }
+    
+    .Content_Card{
+        width: 100%;
+        height: 22.7%;
+        background-color: var(--color-black);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Card_Name{
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+    
+    .Button_Heart{
+        margin-right: 16px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .Image_Heart{
+        width: 12px;
+        height: 10px;
+    }
+}
+
