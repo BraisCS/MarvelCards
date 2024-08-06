@@ -12,7 +12,7 @@ export async function GET() {
     const ts = new Date().getTime();
     const hash = md5(ts + privateKey + publicKey);
 
-    const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}&limit=5`;
+    const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}&limit=50`;
 
     try {
         const response = await axios.get(url);
