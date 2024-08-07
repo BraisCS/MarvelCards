@@ -30,11 +30,11 @@ export default function Home() {
           setCharacters(res.data.characters);
           setFilteredCharacters(res.data.characters);
         } else {
-          setError('Failed to fetch characters');
+          setError(`Failed to fetch characters: ${res.status}`);
         }
       } catch (error: any) {
         console.error('Fetch error:', error);
-        setError('Failed to fetch characters');
+        setError(`Fetch error: ${error.message}`);
       } finally {
         setLoading(false);
       }
@@ -55,22 +55,33 @@ export default function Home() {
   if (loading) {
     return (
       <>
-        <Nav_Top_Loading likedCount={likedCharacters.length}/>
+        <Nav_Top_Loading likedCount={likedCharacters.length} />
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Nav_Top likedCount={likedCharacters.length} onShowAll={handleShowAll} onShowLiked={handleShowLiked} />
+        <main className="Main_Home">
+          <p>{error}</p>
+        </main>
       </>
     );
   }
 
   return (
-        <>
-          <Nav_Top likedCount={likedCharacters.length} onShowAll={handleShowAll} onShowLiked={handleShowLiked} />
-          <main className="Main_Home">
-            <Search characters={characters} setFilteredCharacters={setFilteredCharacters} filteredCharactersCount={filteredCharacters.length} />
-            <section className='Section_Home'>
-              {filteredCharacters.map((character) => (
-                <Character_Card key={character.id} character={character} isLiked={likedCharacters.includes(character.id)} onLikeToggle={() => toggleLike(character.id)} />
-              ))}
-            </section>
-          </main>
-        </>
+    <>
+      <Nav_Top likedCount={likedCharacters.length} onShowAll={handleShowAll} onShowLiked={handleShowLiked} />
+      <main className="Main_Home">
+        <Search characters={characters} setFilteredCharacters={setFilteredCharacters} filteredCharactersCount={filteredCharacters.length} />
+        <section className='Section_Home'>
+          {filteredCharacters.map((character) => (
+            <Character_Card key={character.id} character={character} isLiked={likedCharacters.includes(character.id)} onLikeToggle={() => toggleLike(character.id)} />
+          ))}
+        </section>
+      </main>
+    </>
   );
 }
