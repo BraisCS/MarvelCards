@@ -4,43 +4,43 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 24px 0px 24px 0px;
+    padding: 24px 0px;
     gap: 24px;
-}
-.Section_Home{
+  }
+  
+  .Container_Home {
+    width: 100%;
+    padding: 0 16px;
+  }
+  
+  .Search {
+    width: 100%;
+    margin-bottom: 16px; /* Espacio entre el buscador y la sección de personajes */
+  }
+  
+  .Section_Home {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    padding: 0px 16px 0px 16px;
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
+  }
+  
+  @media (min-width: 735px) and (max-width: 900px) {
     .Main_Home {
-        padding: 48px 0px 48px 0px;
+      padding: 24px 0px;
     }
-    .Section_Home{
-        grid-template-columns: repeat(4, 1fr);
+    .Section_Home {
+      grid-template-columns: repeat(4, 1fr);
     }
-}
-
-@media (min-width: 901px) {
+  }
+  
+  @media (min-width: 901px) {
     .Main_Home {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 48px 0px 48px 0px;
-        gap: 24px;
+      padding: 48px 0px;
     }
-    .Section_Home{
-        background-color: rebeccapurple;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 16px;
+    .Section_Home {
+      padding: 0px 48px 0px 48px;
+      grid-template-columns: repeat(7, 1fr);
     }
-}
+  }
+  

@@ -57,13 +57,23 @@
 
 
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .Card {
+        cursor: pointer;
+        width: 172px;
+        height: 245.97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.86px), calc(100% - 12.86px) 100%, 0 100%);
+    }
 
 }
 
 @media (min-width: 901px) {
     .Card {
-
         cursor: pointer;
         width: 188px;
         height: 245.97px;

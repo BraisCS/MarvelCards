@@ -26,6 +26,7 @@ export default function Home() {
     async function fetchData() {
       try {
         const res = await axios.get('/api/marvel');
+        
         if (res.status === 200) {
           setCharacters(res.data.characters);
           setFilteredCharacters(res.data.characters);

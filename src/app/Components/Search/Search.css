@@ -47,11 +47,10 @@
 }
 
 
-/* @media (min-width: 600px) and (max-width: 900px) {
-
+@media (min-width: 901px) {
     .Search {
-        width: 393px;
-        padding: 12px 16px 12px 16px;
+        width: 100%;
+        padding: 16px 48px 16px 48px;
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -63,7 +62,6 @@
         justify-content: start;
         align-items: center;
         border-bottom: 1px solid #000;
-        padding-bottom: 8px;
         gap: 12px;
     }
     
@@ -85,7 +83,7 @@
     .Search_Input::placeholder {
         color: var(--color-gray);
         font-weight: 400;
-        line-height: 18p.75x;
+        line-height: 18.75px;
         font-size: 16px;
     
     }
@@ -96,5 +94,5 @@
         font-size: 12px;
         color: var(--color-black);
     }
-
-} */
+    
+  }

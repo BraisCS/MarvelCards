@@ -32,6 +32,7 @@ const Character_Card: React.FC<CharacterCardProps> = ({ character, isLiked, onLi
             src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
             alt={character.name}
             className="Card_Image"
+            priority
           />
           <div className="Line"></div>
           <div className="Content_Card">

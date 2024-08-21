@@ -104,3 +104,172 @@
     color: var(--color-black);
 }
 
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .Main_SingleCharacter {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.86px), calc(100% - 12.86px) 100%, 0 100%);
+    }
+    
+    .SingleCharacter_Img {
+        width: 278px;
+        height: 278px;
+    }
+    
+    .Section_SingleCharacter {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 48px;
+    }
+    
+    .SingleCharacter_Name {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--color-white);
+    
+    }
+    
+    .SingleCharacter_Description {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color-white);
+        padding: 16px;
+    }
+    
+    .Image_Heart {
+        width: 24px;
+        height: 21px;
+    }
+    
+    .Button_Heart {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* Comics */
+    .Section_Comics {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-top: 48px;
+        padding-left: 16px;
+        gap: 24px;
+        width: 100%;
+        overflow: hidden; /* Ensure overflow is hidden for the carousel */
+    }
+    
+    .Comics_H2{
+        color: var(--color-black);
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .Comics_List {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        overflow-x: auto; 
+        scroll-behavior: smooth; 
+        gap: 16px;
+    }
+    
+    .Comic_Card {
+        width: 164px;
+        min-width: 164px;
+        flex: 0 0 auto; 
+        margin-right: 24px;
+    }
+    
+    .Comic_Image {
+        display: block;
+        width: 164px;
+        height: 252px;
+    }
+    
+    .Comic_Title{
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .Comic_Year{
+        margin-top: 8px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+
+}
+
+@media (min-width: 901px) {
+    .Card {
+
+        cursor: pointer;
+        width: 188px;
+        height: 245.97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.86px), calc(100% - 12.86px) 100%, 0 100%);
+    }
+    .Image_Heart {
+        transition: transform 0.3s ease;
+      }
+    
+    .Card_Image{
+        width: 100%;
+        height: 75%;
+        background-color: white;
+    }
+    
+    .Line{
+        margin-top: -1px;
+        width: 100%;
+        height: 2.18%;
+        background-color: red;
+    }
+    
+    .Content_Card{
+        width: 100%;
+        height: 22.7%;
+        background-color: var(--color-black);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Card_Name{
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+    
+    .Button_Heart{
+        margin-right: 16px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .Image_Heart{
+        width: 12px;
+        height: 10px;
+    }
+}
+
+
+
